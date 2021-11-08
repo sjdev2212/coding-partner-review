@@ -30,4 +30,4 @@ div.addEventListener('submit', (e) => {
   input.value = '';
   input.focus();
 });
-listTodo.createHtml(
+listTodo.createHtml();
