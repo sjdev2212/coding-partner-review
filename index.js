@@ -1,6 +1,7 @@
 import './style.css';
 import Todos from './interactive.js';
 
+const listTodo = new Todos();
 const div = document.getElementById('add');
 
 const input = document.createElement('input');
@@ -14,7 +15,6 @@ addButton.innerText = 'Add';
 addButton.type = 'submit';
 div.append(input, addButton);
 
-const listTodo = new Todos();
 
 div.addEventListener('submit', (e) => {
   e.preventDefault();
